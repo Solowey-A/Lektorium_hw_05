@@ -1,0 +1,346 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("../fonts/Amsdam Regular/amsdam.css?famyly=Amsdam");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a ul, a:hover ul {
+  list-style: none;
+}
+
+html, body, #wrapper {
+  font-weight: 400;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html #wrapper, body #wrapper, #wrapper #wrapper {
+  padding-top: 100px;
+}
+
+html #wrapper .container, body #wrapper .container, #wrapper #wrapper .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 15px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #efefef;
+  -webkit-box-shadow: 1px 1px 12px #969696;
+          box-shadow: 1px 1px 12px #969696;
+}
+
+html #wrapper .container h1, body #wrapper .container h1, #wrapper #wrapper .container h1 {
+  width: 100%;
+  line-height: 50px;
+}
+
+html #wrapper .container .todo, body #wrapper .container .todo, #wrapper #wrapper .container .todo {
+  position: relative;
+  border-top: 4px solid #969696;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 25px;
+}
+
+html #wrapper .container .todo h5, body #wrapper .container .todo h5, #wrapper #wrapper .container .todo h5 {
+  line-height: 30px;
+}
+
+html #wrapper .container .todo form, body #wrapper .container .todo form, #wrapper #wrapper .container .todo form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+html #wrapper .container .todo form a, body #wrapper .container .todo form a, #wrapper #wrapper .container .todo form a {
+  position: absolute;
+  right: 0;
+  color: #7a9fa5;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+html #wrapper .container .todo form a:hover, body #wrapper .container .todo form a:hover, #wrapper #wrapper .container .todo form a:hover {
+  color: #6ec4d5;
+  text-shadow: 3px 3px 5px #8ce7f8;
+}
+
+html #wrapper .container .todo form a i, body #wrapper .container .todo form a i, #wrapper #wrapper .container .todo form a i {
+  margin: 3px;
+}
+
+html #wrapper .container .todo form .add, body #wrapper .container .todo form .add, #wrapper #wrapper .container .todo form .add {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+html #wrapper .container .todo form input, body #wrapper .container .todo form input, #wrapper #wrapper .container .todo form input {
+  width: 45%;
+  border: 1px solid #464646;
+  background: transparent;
+  color: #464646;
+  padding: 5px;
+}
+
+html #wrapper .container .todo ul, body #wrapper .container .todo ul, #wrapper #wrapper .container .todo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html #wrapper .container .todo ul li, body #wrapper .container .todo ul li, #wrapper #wrapper .container .todo ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #000000;
+  padding: 5px 0;
+}
+
+html #wrapper .container .todo ul li .checkbox, body #wrapper .container .todo ul li .checkbox, #wrapper #wrapper .container .todo ul li .checkbox {
+  margin-right: 10px;
+}
+
+html #wrapper .container .todo ul li button, body #wrapper .container .todo ul li button, #wrapper #wrapper .container .todo ul li button {
+  width: 20px;
+  height: 20px;
+  font-size: 1.125em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent;
+  background: transparent;
+}
+
+html #wrapper .container .todo ul li button:active, html #wrapper .container .todo ul li button:focus, body #wrapper .container .todo ul li button:active, body #wrapper .container .todo ul li button:focus, #wrapper #wrapper .container .todo ul li button:active, #wrapper #wrapper .container .todo ul li button:focus {
+  outline: none;
+}
+
+html #wrapper .container .todo ul li button:hover, body #wrapper .container .todo ul li button:hover, #wrapper #wrapper .container .todo ul li button:hover {
+  color: #6ec4d5;
+}
+
+html #wrapper .container .todo ul li .delete:hover, body #wrapper .container .todo ul li .delete:hover, #wrapper #wrapper .container .todo ul li .delete:hover {
+  color: #f17261;
+}
+
+html #wrapper .container .todo ul li label, body #wrapper .container .todo ul li label, #wrapper #wrapper .container .todo ul li label {
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", "sans-serif";
+  font-style: italic;
+}
+
+html #wrapper .container .todo ul li input, body #wrapper .container .todo ul li input, #wrapper #wrapper .container .todo ul li input {
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid #464646;
+  background: transparent;
+  color: #464646;
+  padding-left: 5px;
+  font-size: 1em;
+}
+
+html #wrapper .container .todo ul li .hide, body #wrapper .container .todo ul li .hide, #wrapper #wrapper .container .todo ul li .hide {
+  display: none;
+}
+
+html #wrapper .container .done, body #wrapper .container .done, #wrapper #wrapper .container .done {
+  min-height: 100px;
+  border-top: 4px solid #6ec4d5;
+  width: 100%;
+  padding: 15px 0;
+}
+
+html #wrapper .container .done h5, body #wrapper .container .done h5, #wrapper #wrapper .container .done h5 {
+  color: #7a9fa5;
+  line-height: 30px;
+}
+
+html #wrapper .container .done ul, body #wrapper .container .done ul, #wrapper #wrapper .container .done ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html #wrapper .container .done ul li, body #wrapper .container .done ul li, #wrapper #wrapper .container .done ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #000000;
+  padding: 5px 0;
+}
+
+html #wrapper .container .done ul li .checkbox, body #wrapper .container .done ul li .checkbox, #wrapper #wrapper .container .done ul li .checkbox {
+  margin-right: 10px;
+}
+
+html #wrapper .container .done ul li button, body #wrapper .container .done ul li button, #wrapper #wrapper .container .done ul li button {
+  color: #afafaf;
+  width: 20px;
+  height: 20px;
+  font-size: 1.125em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent;
+  background: transparent;
+}
+
+html #wrapper .container .done ul li button:active, html #wrapper .container .done ul li button:focus, body #wrapper .container .done ul li button:active, body #wrapper .container .done ul li button:focus, #wrapper #wrapper .container .done ul li button:active, #wrapper #wrapper .container .done ul li button:focus {
+  outline: none;
+}
+
+html #wrapper .container .done ul li button:hover, body #wrapper .container .done ul li button:hover, #wrapper #wrapper .container .done ul li button:hover {
+  -webkit-box-shadow: 0 0 0 #6ec4d5;
+          box-shadow: 0 0 0 #6ec4d5;
+}
+
+html #wrapper .container .done ul li .delete:hover, body #wrapper .container .done ul li .delete:hover, #wrapper #wrapper .container .done ul li .delete:hover {
+  color: #f17261;
+}
+
+html #wrapper .container .done ul li label, body #wrapper .container .done ul li label, #wrapper #wrapper .container .done ul li label {
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", "sans-serif";
+  font-style: italic;
+  color: #afafaf;
+  text-decoration: line-through;
+}
+
+html #wrapper .container .done ul li input, body #wrapper .container .done ul li input, #wrapper #wrapper .container .done ul li input {
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid #464646;
+  background: transparent;
+  color: #464646;
+  padding-left: 5px;
+  font-size: 1em;
+}
